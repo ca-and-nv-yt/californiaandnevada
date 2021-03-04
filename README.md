@@ -1,4 +1,4 @@
 # California and Nevada
 this is my website!
 <br>
-https://ca-and-nv-yt.github.io/californiaandnevada/
+<a href="https://ca-and-nv-yt.github.io/californiaandnevada/">Click here to see</a>

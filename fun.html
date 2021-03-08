@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.png" type="img/png">
+        <style>
+        ::selection {
+            background: #ffee00;
+        }
+        ::-moz-selection {
+            background: #ffee00;
+        }
+    </style>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
     <title>Fun stuff - California and Nevada</title>
 </head>
 <body>

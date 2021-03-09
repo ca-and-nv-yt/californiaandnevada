@@ -11,6 +11,9 @@
         background: #ffee00;
     }
 </style>
+<style>
+  
+</style>
 <script>
     document.addEventListener('contextmenu', function(e) {
 e.preventDefault();
@@ -26,6 +29,26 @@ document.addEventListener('contextmenu', event => event.preventDefault());
             background: #ffee00;
         }
     </style>
+            <style>
+
+              @keyframes bgcolor{
+                  0% {
+                      background-color: chartreuse;
+                  }
+                  20% {background-color: cyan;}
+                  40% {background-color: darkviolet;}
+                  60% {background-color: yellow;}
+                  80% {background-color: teal;}
+                  100% {background-color: chartreuse;}
+              }
+              body {
+                  -webkit-animation: bgcolor 20s infinite;
+                  animation: bgcolor 10s infinite;
+                  -webkit-animation-direction: alternate;
+                  animation-direction: alternate;
+                  
+              }
+          </style>
     <script>
         document.addEventListener('contextmenu', function(e) {
   e.preventDefault();

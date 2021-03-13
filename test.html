@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The super super basic code editor!</title>
+</head>
+<body>
+    <input type="text" id="inputText" placeholder="enter anything, press enter to clear" style="width: 500px; height: 500px;" onkeyup="weirdStuff()">
+    <div id="div" style="font-size: 100px;">your text will be here</div>
+    <script>
+        var text = document.getElementById("inputText");
+        var textOutput = document.getElementById("div")
+        //a useless line
+        text.addEventListener("keyup",function(e) {
+            if (e.keyCode === 13) {
+                text.onkeyup = function () {
+                    location.reload();
+                }
+            }
+        });
+        function weirdStuff() {
+            var stuff = text.value;
+            textOutput.innerHTML = stuff;
+        }
+
+    </script>
+</body>
+</html>
